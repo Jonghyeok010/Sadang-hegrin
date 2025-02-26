@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사당 해그린 미술교육</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(255, 219, 118, 1);
+        }
+
+        header {
+            background-color: rgba(255, 194, 26, 1);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            animation: slideIn 1s ease-out;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeInNav 1s ease-in-out forwards;
+        }
+
+        nav a:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        nav a:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        nav a:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeInSection 1.5s forwards;
+        }
+
+        footer {
+            background-color: #009688;
+            color: white;
+            padding: 10px 0; /* 푸터 높이를 줄임 */
+            text-align: center;
+            font-size: 0.9em; /* 글자 크기를 작게 설정 */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .address, .phone {
+            margin-top: 10px;
+        }
+
+        /* 애니메이션 */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInNav {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInSection {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeInSection 2s forwards;
+        }
+
+        /* 시간표 이미지 */
+        .timetable-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeInSection 2.5s forwards;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>사당 해그린 미술교육</h1>
+    <p>어린이부터 성인까지, 예술과 함께하는 일상</p>
+</header>
+
+<nav>
+    <a href="#about">학원 소개</a>
+    <a href="#location">위치 안내</a>
+    <a href="#schedule">시간표</a>
+    <a href="#contact">문의하기</a>
+</nav>
+
+<section id="about">
+    <h2>학원 소개</h2>
+    <p>사당 해그린 미술교육은 어린이부터 성인까지 다양한 연령층을 대상으로 예술과 창의력 향상을 위한 교육을 제공합니다. 우리의 목표는 각자의 개성과 창의성을 키우고, 미술을 통해 삶에 색을 더하는 것입니다.</p>
+</section>
+<img src="IMG_1791.png">
+<section id="location">
+    <h2>위치 안내</h2>
+    <p>사당 해그린 미술교육은 서울 동작구 사당5동, 사당자이아파트 상가 2층에 위치하고 있습니다. 편리한 위치에서 미술 교육을 받아보세요.</p>
+    <p class="address">주소: 서울 동작구 사당5동 사당자이아파트 상가 2층</p>
+</section>
+
+<section id="schedule">
+    <h2>시간표</h2>
+    <p>다양한 수업과 일정에 대한 정보는 아래 시간표에서 확인해 주세요.</p>
+    <div class="timetable-container">
+        <img src="시간표.png" alt="해그린 미술 시간표">
+    </div>
+</section>
+
+<section id="character">
+    <h2>학원 캐릭터</h2>
+    <p>저희 학원 캐릭터 써니입니다.</p>
+    <div class="image-container">
+        <img src="학원_캐릭터.png" alt="해그린 미술 캐릭터">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>문의하기</h2>
+    <p>미술 교육에 관한 더 자세한 사항은 아래 연락처로 문의해 주세요.</p>
+    <p class="phone"><strong>전화:</strong> 02-525-0228</p>
+</section>
+<img src="학원 로고.jpeg" style="width: 105px; height: 105px;"
+<footer>
+    <p>&copy; 2025 사당 해그린 미술교육 | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
